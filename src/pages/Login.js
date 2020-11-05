@@ -8,8 +8,6 @@ function Login() {
     email: "",
     password: "",
   });
-  //   const [email, setEmail] = useState("");
-  //   const [password, setPassword] = useState("");
 
   const handleChange = ({ target: { name, value } }) => {
     setLoginDetails({ [name]: value });
@@ -26,15 +24,15 @@ function Login() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h1>
-          Login to
-          <Link to="/">Live Chat Support</Link>
+    <div className='login-register '>
+      <form onSubmit={handleSubmit} className='shadow-sm p-3 mb-5 bg-white rounded form-box'>
+        <h1 className='login-heading'>
+          <span> Login to</span>
+          <span><Link to="/"> Live Chat Support</Link></span>
         </h1>
-        <p>Fill in the form below to login into your account.</p>
+        <p className='mt-3 ftz-14'>Fill in the form below to login into your account.</p>
         <div>
-          <input
+          <input className='form-control mt-3'
             placeholder="Email"
             name="email"
             type="email"
@@ -44,6 +42,7 @@ function Login() {
         </div>
         <div>
           <input
+            className='form-control mt-3'
             placeholder="Password"
             name="password"
             onChange={handleChange}
@@ -53,10 +52,9 @@ function Login() {
         </div>
         <div>
           {error ? <p>{error}</p> : null}
-          <button type="submit">Login</button>
+          <button className='form-control mt-3 btn login-btn' type="submit">Login</button>
         </div>
-        <hr></hr>
-        <p>
+        <p className='mt-3'>
           Don't have an account? <Link to="/signup">Sign Up</Link>
         </p>
       </form>

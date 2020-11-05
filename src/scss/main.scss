@@ -36,3 +36,31 @@
 svg {
   fill: currentColor;
 }
+.login-register {
+  padding-top: 6rem;
+  text-align: center;
+}
+.login-heading {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.form-box {
+  width: 40%;
+  margin: 0 auto;
+}
+.ftz-14 {
+  font-size: 14px;
+  color: #555555;
+}
+.login-btn {
+  background: #7269ef;
+  color: #fff;
+}
+.login-btn-google {
+  background-color: rgba(255, 0, 0, 0.808);
+  color: #fff;
+}
+.login-btn-github {
+  background-color: rgba(0, 0, 0, 0.774);
+  color: #fff;
+}
