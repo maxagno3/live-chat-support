@@ -7,7 +7,7 @@ function Home() {
       <section>
         <div className="jumbotron jumbotron-fluid py-5">
           <div className="container text-center py-5">
-            <h1 className="display-4">Welcome to Chatty</h1>
+            <h1 className="display-4">Welcome to Live Chat Support</h1>
             <p className="lead">
               A great place to share your thoughts with friends
             </p>

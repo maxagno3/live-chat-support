@@ -4,17 +4,9 @@ import { signInWithGitHub, signInWithGoogle, signUp } from "../helpers/auth";
 
 const SignUp = () => {
   const [error, setError] = useState("");
-  //   const [signUpDetails, setSignUpDetails] = useState({
-  //     email: "",
-  //     password: "",
-  //   });
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-//   const handleChange = ({ target: { name, value } }) => {
-//     console.log({ [name]: value });
-//     setSignUpDetails({ [name]: value });
-//   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();

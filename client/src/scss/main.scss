@@ -1,0 +1,38 @@
+.chats {
+  padding-top: 6rem;
+  p {
+    clear: both;
+  }
+  .chat-bubble {
+    color: #fff;
+    background: #7269ef;
+    background-size: cover;
+    border-radius: 0.2rem;
+    max-width: 50%;
+    margin-left: 2%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    float: left;
+  }
+  .current-user {
+    background: #f5f7fb;
+    color: #000000d2;
+    border-radius: 0.2rem;
+    max-width: 50%;
+    margin-left: 48%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 1rem;
+    float: right;
+    margin-right: 2%;
+  }
+}
+.svg-color-purple {
+  color: #7269ef;
+}
+.svg-color-white {
+  color: #fff;
+  background: #7269ef;
+}
+svg {
+  fill: currentColor;
+}

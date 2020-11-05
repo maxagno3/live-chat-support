@@ -5,6 +5,7 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
+import Header from "./components/Header";
 import Chat from "./pages/Chat";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -33,6 +34,7 @@ const App = () => {
 
   return (
     <Router>
+      <Header />
       <Switch>
         <Route exact path="/" component={Home} />
         <PrivateRoute
@@ -63,10 +65,10 @@ function PrivateRoute({ component: Component, authenticated, ...rest }) {
         authenticated === true ? (
           <Component {...props} />
         ) : (
-          <Redirect
-            to={{ pathname: "/login", state: { from: props.location } }}
-          />
-        )
+            <Redirect
+              to={{ pathname: "/login", state: { from: props.location } }}
+            />
+          )
       }
     />
   );
@@ -80,8 +82,8 @@ function PublicRoute({ component: Component, authenticated, ...rest }) {
         authenticated === false ? (
           <Component {...props} />
         ) : (
-          <Redirect to="/chat" />
-        )
+            <Redirect to="/chat" />
+          )
       }
     />
   );
